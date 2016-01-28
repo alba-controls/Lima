@@ -322,8 +322,12 @@ endif
 
 ifneq ($(COMPILE_ADSC),0)
 
-ADSC_LDFLAGS	:= $(LDFLAGS) -L. -L../camera/adsc/sdk/adsc_sources/lib/linux
-ADSC_LDLIBS	:= $(LDLIBS) -lauxlib -ldetcon_th
+ADSC_LDFLAGS	:= $(LDFLAGS) -L. -L../camera/adsc/sdk/adsc_sources/lib/linux  \
+	-L../third-party/yat/build/yat_install/lib \
+	-L../third-party/DiffractionImage/build/install/lib
+
+
+ADSC_LDLIBS	:= $(LDLIBS) -lyat -lDiffractionImage -lauxlib -ldetcon_th
 
 adsc-name	:= adsc
 adsc-objs	:= ../camera/adsc/src/Adsc.o
