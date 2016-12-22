@@ -9,7 +9,7 @@
 	url = git://github.com/esrf-bliss/Processlib.git
 [submodule "camera/basler"]
 	path = camera/basler
-	url = git://github.com/esrf-bliss/Lima-camera-basler
+	url = https://github.com/alba-controls/Lima-camera-basler.git
 [submodule "applications/spec"]
 	path = applications/spec
 	url = git://github.com/esrf-bliss/Lima-spec
@@ -18,7 +18,7 @@
 	url = git://github.com/esrf-bliss/Lima-camera-pco
 [submodule "camera/pilatus"]
 	path = camera/pilatus
-	url = git://github.com/esrf-bliss/Lima-camera-pilatus
+	url = https://github.com/alba-controls/Lima-camera-pilatus.git
 [submodule "camera/maxipix"]
 	path = camera/maxipix
 	url = git://github.com/esrf-bliss/Lima-camera-maxipix
